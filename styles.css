@@ -135,6 +135,14 @@ h2 { margin: 0; color: var(--blue); font-family: var(--heading); font-size: clam
 .join-steps small { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
 .join-steps .button { margin-top: 26px; }
 
+.documents-section { padding: 0 0 112px; }
+.document-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin-top: 38px; }
+.document-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 144px; padding: 20px 18px; border-top: 2px solid var(--blue); background: var(--sky-pale); transition: transform .2s ease, background .2s ease; }
+.document-card:hover { transform: translateY(-3px); background: var(--sky); }
+.document-card strong { color: var(--blue); font-size: 14px; line-height: 1.5; }
+.document-card span { color: var(--berry); font-size: 11px; font-weight: 700; }
+.documents-note { margin: 22px 0 0; color: var(--muted); font-size: 12px; }
+
 .updates-section { padding: 0 0 116px; }
 .updates-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 10%; align-items: center; }
 .updates-image { position: relative; min-height: 390px; }
@@ -178,6 +186,7 @@ h2 { margin: 0; color: var(--blue); font-family: var(--heading); font-size: clam
   .hero-media { min-height: 410px; }
   .hero-media img { height: 410px; }
   .schedule-layout, .join-grid, .updates-grid, .contact-grid { grid-template-columns: 1fr; gap: 52px; }
+  .document-grid { grid-template-columns: repeat(2, 1fr); }
   .approach-grid { gap: 7%; }
   .updates-section { padding-top: 0; }
   .updates-image { max-width: 680px; }
@@ -231,6 +240,9 @@ h2 { margin: 0; color: var(--blue); font-family: var(--heading); font-size: clam
   .support-item h2 { font-size: 32px; }
   .fee-line strong { font-size: 50px; }
   .join-grid, .contact-grid { gap: 38px; }
+  .documents-section { padding-bottom: 82px; }
+  .document-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 30px; }
+  .document-card { min-height: 96px; }
   .join-copy h2 { font-size: 47px; }
   .updates-section { padding-bottom: 82px; }
   .updates-image, .updates-image img { min-height: 270px; height: 270px; }
