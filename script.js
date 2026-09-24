@@ -17,10 +17,11 @@ if (menuToggle && siteNav) {
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key !== 'Escape') return;
+    if (event.key !== 'Escape' || !siteNav.classList.contains('is-open')) return;
     siteNav.classList.remove('is-open');
     menuToggle.setAttribute('aria-expanded', 'false');
     menuToggle.querySelector('.sr-only').textContent = 'メニューを開く';
+    menuToggle.focus();
   });
 }
 
